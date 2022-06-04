@@ -26,6 +26,7 @@ public class TripEntity {
     private Double startFuelLevel;
     private Double endFuelLevel;
 
+    private String beginning;
     private String destination;
 
     @Enumerated(EnumType.STRING)
@@ -87,6 +88,14 @@ public class TripEntity {
 
     public void setEndFuelLevel(Double endFuelLevel) {
         this.endFuelLevel = endFuelLevel;
+    }
+
+    public String getBeginning() {
+        return beginning;
+    }
+
+    public void setBeginning(String beginning) {
+        this.beginning = beginning;
     }
 
     public String getDestination() {

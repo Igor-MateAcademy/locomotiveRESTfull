@@ -110,9 +110,11 @@ public class TripServiceImpl implements TripService, TripStrippedService {
         tripToUpdate.setStartFuelLevel(trip.getStartFuelLevel());
         tripToUpdate.setEndFuelLevel(trip.getEndFuelLevel());
 
+        tripToUpdate.setBeginning(trip.getBeginning());
         tripToUpdate.setDestination(trip.getDestination());
-        tripToUpdate.setTrainType(trip.getTrainType());
         tripToUpdate.setExitPoint(trip.getExitPoint());
+
+        tripToUpdate.setTrainType(trip.getTrainType());
 
         return tripRepository.save(tripToUpdate);
     }
